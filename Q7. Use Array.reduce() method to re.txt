@@ -1,0 +1,43 @@
+Q7. Use Array.reduce() method to reverse the following given array
+
+const arr = [1, 2, 3, 4, 5]
+
+const arr = [1, 2, 3, 4, 5];
+
+const reversedArr = arr.reduce((accumulator, currentValue) => {
+  
+}, []);
+
+console.log(reversedArr); // Output: [5, 4, 3, 2, 1]
+
+Q8. In what order will the numbers 1-4 be logged to the console when the code below is executed? Why?
+
+(function() {
+
+    console.log(1); 
+
+    setTimeout(function(){console.log(2)}, 1000); 
+
+    setTimeout(function(){console.log(3)}, 0); 
+
+    console.log(4);
+
+})();
+
+Ans:
+
+The order in which the numbers 1-4 will be logged to the console when the given code is executed is as follows:
+
+1
+4
+3
+2
+
+Here's the explanation:
+
+When the code is executed, the first statement inside the immediately-invoked function expression (IIFE) is console.log(1), which logs the number 1 to the console.
+
+The second statement is setTimeout(function(){console.log(2)}, 1000), which schedules the logging of number 2 after a delay of 1000 milliseconds (1 second). During this delay, other synchronous code will continue to execute.
+
+
+
